@@ -1,0 +1,95 @@
+body {
+    background: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #38b5fd;
+    height: 100px;
+}
+
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px lightgray;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.input-area {
+    /*
+    htmlの改行やインデント、空白も文字として含まれ
+    widthをぴったりにすると溢れてしまう
+    font-sizeを0とすることで相殺することができる
+    */
+    font-size: 0;
+    margin-bottom: 20px;
+}
+
+#price, #num, #unit {
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+#price {
+    width: 140px;
+}
+
+#num, #unit {
+    width: 110px;
+}
+
+#btn {
+    cursor: pointer;
+    display: inline-block; /* 横並び（高さ指定可能） */
+    width: 110px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #3897fd;
+}
+
+#btn.disabled {
+    opacity: 0.5;
+}
+
+.result-area {
+    position: relative;
+    background: #f8f8f8;
+    height: 130px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#result {
+    margin: 0;
+}
+
+#reset {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#reset.hidden {
+    display: none;
+}
